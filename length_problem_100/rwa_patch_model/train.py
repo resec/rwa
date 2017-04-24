@@ -87,7 +87,7 @@ b_o = tf.Variable(tf.zeros([num_classes]))
 n = tf.zeros([batch_size, num_cells])
 d = tf.zeros([batch_size, num_cells])
 h = tf.zeros([batch_size, num_cells])
-a_max = tf.fill([batch_size, num_cells], 0)	# Start off with 0.0 instead of -1E38
+a_max = tf.fill([batch_size, num_cells], 0.0)	# Start off with 0.0 instead of -1E38
 
 # Define model
 #
