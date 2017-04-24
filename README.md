@@ -1,4 +1,4 @@
-# This fork is trying to patch the RWA model, gaining more implementational flexibility
+# This fork is trying to modify the RWA model, gaining more implementational flexibility
 The patched RWA model is in 'rwa_patch_model' folder under the problem folder. 
 The main goal is to let RWA model to start off with 'zero states'. The changed parts are:
 
