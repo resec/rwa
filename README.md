@@ -1,10 +1,10 @@
-# This fork is trying to patch the RWA model, to gain some more implementational flexibility
+# This fork is trying to patch the RWA model, gaining more implementational flexibility
 The patched RWA model is in 'rwa_patch_model' folder under the problem folder. 
-The main goal is to let RWA model to start off with 'zero states'. the changed parts are:
+The main goal is to let RWA model to start off with 'zero states'. The changed parts are:
 
-1. The a_max is initialized as zero vector.
-2. Let h to be initialized as zero state.
-3. The s0 vector is added to n/d before the actvation of h.
+* The a_max is initialized as zero vector.
+* Let h to be initialized as zero state.
+* The s0 vector is added to n/d before the actvation of h.
 
 (This is a ongoing work)
 
