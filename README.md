@@ -1,3 +1,13 @@
+# This fork is trying to modify the RWA model, gaining more implementational flexibility
+The patched RWA model is in 'rwa_patch_model' folder under the problem folder. 
+The main goal is to let RWA model to start off with 'zero states'. The changed parts are:
+
+* The a_max is initialized as zero vector.
+* Let h to be initialized as zero state.
+* The s0 vector is added to n/d before the actvation of h.
+
+(This is a ongoing work)
+
 ## Description
 
 This repository holds the code to a new kind of RNN model for processing sequential data. The model computes a recurrent weighted average (RWA) over every previous processing step. With this approach, the model can form direct connections anywhere along a sequence. This stands in contrast to traditional RNN architectures that only use the previous processing step. A detailed description of the RWA model has been published in a manuscript at [https://arxiv.org/pdf/1703.01253.pdf](https://arxiv.org/pdf/1703.01253.pdf).
