@@ -112,7 +112,7 @@ for i in range(max_steps):
 
 	n = tf.multiply(n, exp_diff)+tf.multiply(z, exp_scaled)	# Numerically stable update of numerator
 	d = tf.multiply(d, exp_diff)+exp_scaled	# Numerically stable update of denominator
-	h = activation(tf.div(n, d)+tf.expand_dims(s, 0))
+	h = activation(tf.div(n, d)+tf.expand_dims(s, 0)) # here adds the s into n/d before activation of h
 	a_max = a_newmax
 
 	ly = tf.matmul(h, W_o)+b_o
