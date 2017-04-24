@@ -39,8 +39,8 @@ class Dataset:
 #
 import sys
 sys.path.append('../dataset')
-import input_data_permuted
-_data = input_data_permuted.read_data_sets()
+import input_data
+_data = input_data.read_data_sets('../dataset/bin', one_hot=True)
 
 # Merge training and validation sets back together
 #
